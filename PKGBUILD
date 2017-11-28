@@ -11,9 +11,8 @@ license=(LGPL)
 groups=(plasma)
 depends=(kidletime kwayland kdeclarative)
 makedepends=(extra-cmake-modules python kdoctools kcmutils libxcursor)
-source=("https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz"{,.sig})
-sha256sums=('87e049ea0771a72e2919fb618348c58f56b476d520f57ce7c269e877341a4464'
-            'SKIP')
+source=("https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz")
+sha256sums=('87e049ea0771a72e2919fb618348c58f56b476d520f57ce7c269e877341a4464')
 validpgpkeys=('5FF0C09152A95D743BFD60A402FD193357C6A9B6')  # Herve VIDAL
 
 
