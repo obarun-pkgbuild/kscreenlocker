@@ -14,9 +14,7 @@ makedepends=(extra-cmake-modules python kdoctools kcmutils libxcursor)
 source=("https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz"{,.sig})
 sha256sums=('87e049ea0771a72e2919fb618348c58f56b476d520f57ce7c269e877341a4464'
             'SKIP')
-validpgpkeys=('2D1D5B0588357787DE9EE225EC94D18F7F05997E'  # Jonathan Riddell
-              '348C8651206633FD983A8FC4DEACEA00075E1D76'  # KDE Neon
-              'D07BD8662C56CB291B316EB2F5675605C74E02CF')  # David Edmundson
+validpgpkeys=('5FF0C09152A95D743BFD60A402FD193357C6A9B6')  # Herve VIDAL
 
 
 prepare() {
