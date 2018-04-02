@@ -2,7 +2,7 @@
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kscreenlocker
-pkgver=5.11.5
+pkgver=5.12.4
 pkgrel=2
 pkgdesc='Library and components for secure lock screen architecture'
 arch=(x86_64)
@@ -11,10 +11,13 @@ license=(LGPL)
 groups=(plasma)
 depends=(kidletime kwayland kdeclarative)
 makedepends=(extra-cmake-modules python kdoctools kcmutils libxcursor)
-source=("https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz"{,.sig})
-sha256sums=('5f59936eba34b57068d265d823e4525cb7ab7a81c8e7b954c8b6eeda25f22b63'
-            'SKIP')
-validpgpkeys=('5FF0C09152A95D743BFD60A402FD193357C6A9B6')  # Herve VIDAL
+source=("https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz")
+sha256sums=('357cb97d31d5cd91d647169f0fe980fbce08cb71a01087022fdab155bf32eca0')
+validpgpkeys=('2D1D5B0588357787DE9EE225EC94D18F7F05997E'  # Jonathan Riddell
+              '0AAC775BB6437A8D9AF7A3ACFE0784117FBCE11D'  # Bhushan Shah <bshah@kde.org>
+              'D07BD8662C56CB291B316EB2F5675605C74E02CF'  # David Edmundson
+              '1FA881591C26B276D7A5518EEAAF29B42A678C20'  # Marco Martin <notmart@gmail.com>
+			  '5FF0C09152A95D743BFD60A402FD193357C6A9B6')  # Herve VIDAL
 
 prepare() {
   mkdir -p build
